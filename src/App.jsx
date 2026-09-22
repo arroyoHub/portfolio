@@ -165,16 +165,60 @@ function App() {
         </section>
 
         <section id="skills" className="section">
-          <div className="section-heading">
-            <p className="eyebrow">Skills</p>
-            <h2>Skills</h2>
-          </div>
+          <div className="skills-layout">
+            <div className="section-heading">
+              <p className="eyebrow">what i work with</p>
+              <h2>skills &amp; tools.</h2>
+            </div>
 
-          <ul className="placeholder-list">
-            <li>Skill placeholder</li>
-            <li>Skill placeholder</li>
-            <li>Skill placeholder</li>
-          </ul>
+            <div
+              className="skill-groups"
+              aria-label="Skills and tools categories"
+            >
+              <div className="skill-group">
+                <h3>Data &amp; databases</h3>
+                <ul>
+                  <li>SQL Server</li>
+                  <li>T-SQL</li>
+                  <li>SSMS</li>
+                  <li>Relational Data Modeling</li>
+                </ul>
+              </div>
+
+              <div className="skill-group">
+                <h3>Analysis &amp; reporting</h3>
+                <ul>
+                  <li>Excel</li>
+                  <li>Power BI</li>
+                  <li>Python</li>
+                  <li>pandas</li>
+                  <li>Jupyter</li>
+                </ul>
+              </div>
+
+              <div className="skill-group">
+                <h3>Workflow &amp; development</h3>
+                <ul>
+                  <li>Git</li>
+                  <li>GitHub</li>
+                  <li>VS Code</li>
+                  <li>Technical Documentation</li>
+                </ul>
+              </div>
+
+              <div className="skill-group">
+                <h3>Analytical work</h3>
+                <ul>
+                  <li>Reporting</li>
+                  <li>Requirements Analysis</li>
+                  <li>Process Improvement</li>
+                  <li>Data Quality</li>
+                  <li>Operational Analysis</li>
+                  <li>Data Visualization</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </section>
 
         <section id="resume" className="section">
