@@ -40,27 +40,6 @@ function App() {
           </div>
         </section>
 
-        <section id="about" className="section">
-          <div className="section-heading">
-            <p className="eyebrow">About</p>
-            <h2>About</h2>
-          </div>
-          <p>Add a brief introduction here.</p>
-        </section>
-
-        <section id="skills" className="section">
-          <div className="section-heading">
-            <p className="eyebrow">Skills</p>
-            <h2>Skills</h2>
-          </div>
-
-          <ul className="placeholder-list">
-            <li>Skill placeholder</li>
-            <li>Skill placeholder</li>
-            <li>Skill placeholder</li>
-          </ul>
-        </section>
-
         <section id="projects" className="section">
           <div className="section-heading">
             <p className="eyebrow">selected work</p>
@@ -148,6 +127,27 @@ function App() {
               </div>
             </article>
           </div>
+        </section>
+
+        <section id="about" className="section">
+          <div className="section-heading">
+            <p className="eyebrow">About</p>
+            <h2>About</h2>
+          </div>
+          <p>Add a brief introduction here.</p>
+        </section>
+
+        <section id="skills" className="section">
+          <div className="section-heading">
+            <p className="eyebrow">Skills</p>
+            <h2>Skills</h2>
+          </div>
+
+          <ul className="placeholder-list">
+            <li>Skill placeholder</li>
+            <li>Skill placeholder</li>
+            <li>Skill placeholder</li>
+          </ul>
         </section>
 
         <section id="resume" className="section">
