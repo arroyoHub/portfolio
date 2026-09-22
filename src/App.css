@@ -324,6 +324,66 @@ main {
   padding-bottom: 0.1rem;
 }
 
+.resume-section {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.resume-header {
+  margin-bottom: var(--space-1);
+}
+
+.resume-header h2 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.08;
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  color: var(--text-primary);
+}
+
+.resume-copy {
+  max-width: 42rem;
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: 1.04rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.resume-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+  margin-top: var(--space-2);
+}
+
+.resume-primary,
+.resume-secondary {
+  display: inline-block;
+  padding-bottom: 0.1rem;
+  border-bottom: 1px solid var(--border-soft);
+  text-decoration: none;
+}
+
+.resume-primary {
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.resume-secondary {
+  color: var(--text-secondary);
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: lowercase;
+}
+
 @media (max-width: 700px) {
   .project-row {
     grid-template-columns: 1fr;
@@ -381,5 +441,11 @@ main {
 
   .about-photo {
     min-height: 260px;
+  }
+
+  .resume-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
   }
 }

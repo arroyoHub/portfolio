@@ -221,12 +221,30 @@ function App() {
           </div>
         </section>
 
-        <section id="resume" className="section">
-          <div className="section-heading">
-            <p className="eyebrow">Resume</p>
-            <h2>Resume</h2>
+        <section id="resume" className="section resume-section">
+          <div className="resume-header">
+            <p className="eyebrow">resume</p>
+            <h2>experience, on paper.</h2>
           </div>
-          <p>Resume content placeholder.</p>
+
+          <p className="resume-copy">
+            My experience spans data analysis, reporting, database work,
+            requirements analysis, process improvement, and operational support.
+          </p>
+
+          <div className="resume-actions">
+            <a href="/resume.pdf" className="resume-primary" download>
+              Download Resume
+            </a>
+            <a
+              href="https://www.linkedin.com"
+              className="resume-secondary"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View LinkedIn
+            </a>
+          </div>
         </section>
 
         <section id="contact" className="section">
