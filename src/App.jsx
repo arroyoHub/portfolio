@@ -1,10 +1,16 @@
 import "./App.css";
 
-const navItems = ["About", "Skills", "Projects", "Resume", "Contact"];
+const navItems = [
+  { label: "Work", href: "#projects" },
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#skills" },
+  { label: "Resume", href: "#resume" },
+  { label: "Contact", href: "#contact" },
+];
 
 function App() {
   return (
-    <div className="page-shell">
+    <div id="top" className="page-shell">
       <header className="site-header">
         <nav className="top-nav" aria-label="Main navigation">
           <a href="#top" className="brand">
@@ -13,15 +19,15 @@ function App() {
 
           <div className="nav-links">
             {navItems.map((item) => (
-              <a key={item} href={`#${item.toLowerCase()}`}>
-                {item}
+              <a key={item.label} href={item.href}>
+                {item.label}
               </a>
             ))}
           </div>
         </nav>
       </header>
 
-      <main id="top">
+      <main>
         <section className="section hero" aria-labelledby="hero-title">
           <div className="hero-copy">
             <p className="eyebrow">hi, i’m</p>
@@ -222,28 +228,31 @@ function App() {
         </section>
 
         <section id="resume" className="section resume-section">
-          <div className="resume-header">
-            <p className="eyebrow">resume</p>
-            <h2>experience, on paper.</h2>
-          </div>
+          <div className="resume-content">
+            <div className="resume-header">
+              <p className="eyebrow">resume</p>
+              <h2>experience, on paper.</h2>
+            </div>
 
-          <p className="resume-copy">
-            My experience spans data analysis, reporting, database work,
-            requirements analysis, process improvement, and operational support.
-          </p>
+            <p className="resume-copy">
+              My experience spans data analysis, reporting, database work,
+              requirements analysis, process improvement, and operational
+              support.
+            </p>
 
-          <div className="resume-actions">
-            <a href="/resume.pdf" className="resume-primary" download>
-              Download Resume
-            </a>
-            <a
-              href="https://www.linkedin.com"
-              className="resume-secondary"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View LinkedIn
-            </a>
+            <div className="resume-actions">
+              <a href="/resume.pdf" className="resume-primary" download>
+                Download Resume
+              </a>
+              <a
+                href="https://www.linkedin.com"
+                className="resume-secondary"
+                target="_blank"
+                rel="noreferrer"
+              >
+                View LinkedIn
+              </a>
+            </div>
           </div>
         </section>
 
