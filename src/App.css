@@ -22,7 +22,7 @@
   font-family: var(--font-sans);
   font-size: 0.9rem;
   font-weight: 600;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--text-primary);
   text-decoration: none;
@@ -56,53 +56,68 @@ main {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.5fr) minmax(220px, 0.75fr);
-  align-items: end;
-  gap: var(--space-5);
-  padding-top: var(--space-5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 64vh;
+  padding-top: var(--space-6);
+  padding-bottom: var(--space-6);
+  border-top: 1px solid var(--border-soft);
+}
+
+.hero-copy {
+  max-width: 860px;
+  text-align: center;
 }
 
 .hero-copy h1 {
-  margin: 0 0 var(--space-3);
+  margin: 0;
   font-family: var(--font-serif);
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(3.4rem, 6vw, 7.6rem);
   font-weight: 500;
-  line-height: 0.9;
+  line-height: 0.92;
   letter-spacing: -0.06em;
   color: var(--text-primary);
+  white-space: nowrap;
 }
 
 .eyebrow {
   margin: 0 0 var(--space-2);
   font-family: var(--font-sans);
   font-size: 0.72rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0.12em;
-  text-transform: uppercase;
+  text-transform: lowercase;
   color: var(--text-muted);
 }
 
-.lede {
-  margin: 0;
-  max-width: 38rem;
+.positioning {
+  margin: 0 0 var(--space-4);
   font-family: var(--font-sans);
-  font-size: 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+}
+
+.lede {
+  margin: 0 auto var(--space-4);
+  max-width: 42rem;
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
   line-height: 1.8;
   color: var(--text-secondary);
 }
 
-.hero-panel {
-  min-height: 220px;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--border-soft);
-  background: var(--panel-strong);
-  color: var(--text-muted);
+.cta-link {
+  display: inline-block;
+  padding: 0;
+  border-bottom: 1px solid var(--border-soft);
+  color: var(--text-primary);
   font-family: var(--font-sans);
-  font-size: 0.82rem;
-  letter-spacing: 0.08em;
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .section-heading {
@@ -182,6 +197,17 @@ main {
   }
 
   .hero {
-    grid-template-columns: 1fr;
+    min-height: unset;
+    padding-top: var(--space-5);
+    padding-bottom: var(--space-5);
+  }
+
+  .hero-copy h1 {
+    white-space: normal;
+    line-height: 0.95;
+  }
+
+  .positioning {
+    letter-spacing: 0.02em;
   }
 }

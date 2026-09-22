@@ -8,7 +8,7 @@ function App() {
       <header className="site-header">
         <nav className="top-nav" aria-label="Main navigation">
           <a href="#top" className="brand">
-            Portfolio
+            Christian Arroyo
           </a>
 
           <div className="nav-links">
@@ -24,16 +24,19 @@ function App() {
       <main id="top">
         <section className="section hero" aria-labelledby="hero-title">
           <div className="hero-copy">
-            <p className="eyebrow">Portfolio</p>
-            <h1 id="hero-title">Hero placeholder</h1>
-            <p className="lede">
-              This area can hold a short introduction, a headline, or a call to
-              action.
+            <p className="eyebrow">hi, i’m</p>
+            <h1 id="hero-title">Christian Arroyo</h1>
+            <p className="positioning">
+              Data Analyst | Reporting | Business Intelligence
             </p>
-          </div>
+            <p className="lede">
+              Turning operational data and business requirements into reliable
+              reporting and reusable solutions.
+            </p>
 
-          <div className="hero-panel" aria-label="Hero placeholder panel">
-            <span>Hero placeholder</span>
+            <a href="#projects" className="cta-link">
+              See my work
+            </a>
           </div>
         </section>
 
