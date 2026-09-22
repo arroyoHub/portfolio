@@ -384,6 +384,97 @@ main {
   text-transform: lowercase;
 }
 
+.contact-section {
+  display: grid;
+  gap: var(--space-7);
+  padding: var(--space-6) var(--space-5) var(--space-4);
+  border-top: 0;
+  background: #211e1b;
+  color: var(--paper);
+}
+
+.contact-section .eyebrow,
+.contact-section p,
+.contact-section small,
+.contact-section a {
+  color: var(--paper);
+}
+
+.contact-main {
+  max-width: 48rem;
+}
+
+.contact-main h2 {
+  margin: 0 0 var(--space-3);
+  font-family: var(--font-serif);
+  font-size: clamp(2.8rem, 6vw, 5.6rem);
+  line-height: 0.98;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+}
+
+.contact-copy {
+  max-width: 38rem;
+  margin: 0 0 var(--space-4);
+  font-family: var(--font-sans);
+  font-size: 1.04rem;
+  line-height: 1.8;
+  opacity: 0.78;
+}
+
+.contact-email {
+  display: inline-block;
+  border-bottom: 1px solid rgba(247, 242, 235, 0.7);
+  padding-bottom: 0.2rem;
+  font-family: var(--font-sans);
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding-top: var(--space-4);
+  border-top: 1px solid rgba(247, 242, 235, 0.2);
+}
+
+.footer-identity p,
+.footer-identity small {
+  display: block;
+  margin: 0;
+  font-family: var(--font-sans);
+}
+
+.footer-identity p {
+  margin-bottom: var(--space-1);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.footer-identity small {
+  font-size: 0.68rem;
+  opacity: 0.58;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: var(--space-3);
+}
+
+.footer-links a {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  opacity: 0.68;
+  text-decoration: none;
+}
+
 @media (max-width: 700px) {
   .project-row {
     grid-template-columns: 1fr;
@@ -447,5 +538,18 @@ main {
     flex-direction: column;
     align-items: flex-start;
     gap: var(--space-3);
+  }
+
+  .contact-section {
+    padding: var(--space-5) var(--space-3) var(--space-3);
+  }
+
+  .site-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
   }
 }

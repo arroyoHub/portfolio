@@ -247,12 +247,41 @@ function App() {
           </div>
         </section>
 
-        <section id="contact" className="section">
-          <div className="section-heading">
-            <p className="eyebrow">Contact</p>
-            <h2>Contact</h2>
+        <section id="contact" className="section contact-section">
+          <div className="contact-main">
+            <p className="eyebrow">contact</p>
+            <h2>let&rsquo;s connect.</h2>
+            <p className="contact-copy">
+              Open to opportunities in data analysis, reporting, business
+              intelligence, and operations analytics.
+            </p>
+            <a className="contact-email" href="mailto:hello@example.com">
+              hello@example.com
+            </a>
           </div>
-          <p>Contact details placeholder.</p>
+
+          <footer className="site-footer">
+            <div className="footer-identity">
+              <p>Christian Arroyo</p>
+              <small>
+                Designed &amp; built by Christian Arroyo &copy; 2026
+              </small>
+            </div>
+
+            <nav className="footer-links" aria-label="Footer navigation">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                LinkedIn
+              </a>
+              <a href="https://github.com" target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+              <a href="mailto:hello@example.com">Email</a>
+            </nav>
+          </footer>
         </section>
       </main>
     </div>
