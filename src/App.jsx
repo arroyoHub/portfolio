@@ -63,22 +63,89 @@ function App() {
 
         <section id="projects" className="section">
           <div className="section-heading">
-            <p className="eyebrow">Projects</p>
-            <h2>Projects</h2>
+            <p className="eyebrow">selected work</p>
+            <h2>things i’ve analyzed &amp; built</h2>
           </div>
 
-          <div className="card-grid">
-            <article className="info-card">
-              <h3>Project placeholder</h3>
-              <p>Add project details here.</p>
+          <div className="project-list" aria-label="Selected work list">
+            <article className="project-row">
+              <div className="project-number">01</div>
+              <div className="project-content">
+                <h3>Economic Opportunity Dashboard</h3>
+                <p>
+                  Exploring the relationships between income, homeownership,
+                  inflation, employment demand, and generational economic
+                  outcomes.
+                </p>
+                <div className="tag-list" aria-label="Project tags">
+                  <span>Power BI</span>
+                  <span>Data Analysis</span>
+                  <span>Data Storytelling</span>
+                </div>
+              </div>
+              <div className="project-arrow" aria-hidden="true">
+                →
+              </div>
             </article>
-            <article className="info-card">
-              <h3>Project placeholder</h3>
-              <p>Add project details here.</p>
+
+            <article className="project-row">
+              <div className="project-number">02</div>
+              <div className="project-content">
+                <h3>Configurable Data Processing Platform</h3>
+                <p>
+                  A reusable SQL Server architecture designed around
+                  configurable processing, maintainability, auditability, and
+                  operational visibility.
+                </p>
+                <div className="tag-list" aria-label="Project tags">
+                  <span>SQL Server</span>
+                  <span>Data Modeling</span>
+                  <span>T-SQL</span>
+                  <span>Git</span>
+                </div>
+              </div>
+              <div className="project-arrow" aria-hidden="true">
+                →
+              </div>
             </article>
-            <article className="info-card">
-              <h3>Project placeholder</h3>
-              <p>Add project details here.</p>
+
+            <article className="project-row">
+              <div className="project-number">03</div>
+              <div className="project-content">
+                <h3>Skip Trace Analytics</h3>
+                <p>
+                  A relational tracking and reporting framework designed to
+                  analyze vendor results, duplicate activity, hit rates, and
+                  operational costs.
+                </p>
+                <div className="tag-list" aria-label="Project tags">
+                  <span>SQL Server</span>
+                  <span>Reporting</span>
+                  <span>Analytics</span>
+                </div>
+              </div>
+              <div className="project-arrow" aria-hidden="true">
+                →
+              </div>
+            </article>
+
+            <article className="project-row">
+              <div className="project-number">04</div>
+              <div className="project-content">
+                <h3>March Madness Predictor</h3>
+                <p>
+                  Exploring historical NCAA tournament data and predictive
+                  modeling techniques using Python.
+                </p>
+                <div className="tag-list" aria-label="Project tags">
+                  <span>Python</span>
+                  <span>pandas</span>
+                  <span>Data Analysis</span>
+                </div>
+              </div>
+              <div className="project-arrow" aria-hidden="true">
+                →
+              </div>
             </article>
           </div>
         </section>
