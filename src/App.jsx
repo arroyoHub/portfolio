@@ -130,11 +130,38 @@ function App() {
         </section>
 
         <section id="about" className="section">
-          <div className="section-heading">
-            <p className="eyebrow">About</p>
-            <h2>About</h2>
+          <div className="about-layout">
+            <div
+              className="about-photo"
+              aria-label="Profile photo placeholder"
+            ></div>
+
+            <div className="about-copy">
+              <div className="section-heading">
+                <p className="eyebrow">about me</p>
+                <h2>hi, i’m christian.</h2>
+              </div>
+
+              <p>
+                I’m a data analyst based in San Antonio, working with SQL
+                Server, reporting, operational data, and business processes.
+              </p>
+              <p>
+                I enjoy turning messy requirements and repetitive workflows into
+                structured data, clearer reporting, and reusable solutions.
+              </p>
+              <p>
+                I’m continuing to deepen my skills in SQL, Power BI, Python, and
+                data modeling while building stronger end-to-end analytics
+                workflows.
+              </p>
+
+              <div className="about-links">
+                <a href="#projects">see my work</a>
+                <a href="#contact">get in touch</a>
+              </div>
+            </div>
           </div>
-          <p>Add a brief introduction here.</p>
         </section>
 
         <section id="skills" className="section">
