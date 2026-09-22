@@ -1,122 +1,103 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import "./App.css";
+
+const navItems = ["About", "Skills", "Projects", "Resume", "Contact"];
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+    <div className="page-shell">
+      <header className="site-header">
+        <nav className="top-nav" aria-label="Main navigation">
+          <a href="#top" className="brand">
+            Portfolio
+          </a>
 
-      <div className="ticks"></div>
+          <div className="nav-links">
+            {navItems.map((item) => (
+              <a key={item} href={`#${item.toLowerCase()}`}>
+                {item}
+              </a>
+            ))}
+          </div>
+        </nav>
+      </header>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
+      <main id="top">
+        <section className="section hero" aria-labelledby="hero-title">
+          <div className="hero-copy">
+            <p className="eyebrow">Portfolio</p>
+            <h1 id="hero-title">Hero placeholder</h1>
+            <p className="lede">
+              This area can hold a short introduction, a headline, or a call to
+              action.
+            </p>
+          </div>
+
+          <div className="hero-panel" aria-label="Hero placeholder panel">
+            <span>Hero placeholder</span>
+          </div>
+        </section>
+
+        <section id="about" className="section">
+          <div className="section-heading">
+            <p className="eyebrow">About</p>
+            <h2>About</h2>
+          </div>
+          <p>Add a brief introduction here.</p>
+        </section>
+
+        <section id="skills" className="section">
+          <div className="section-heading">
+            <p className="eyebrow">Skills</p>
+            <h2>Skills</h2>
+          </div>
+
+          <ul className="placeholder-list">
+            <li>Skill placeholder</li>
+            <li>Skill placeholder</li>
+            <li>Skill placeholder</li>
           </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        </section>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
-  )
+        <section id="projects" className="section">
+          <div className="section-heading">
+            <p className="eyebrow">Projects</p>
+            <h2>Projects</h2>
+          </div>
+
+          <div className="card-grid">
+            <article className="info-card">
+              <h3>Project placeholder</h3>
+              <p>Add project details here.</p>
+            </article>
+            <article className="info-card">
+              <h3>Project placeholder</h3>
+              <p>Add project details here.</p>
+            </article>
+            <article className="info-card">
+              <h3>Project placeholder</h3>
+              <p>Add project details here.</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="resume" className="section">
+          <div className="section-heading">
+            <p className="eyebrow">Resume</p>
+            <h2>Resume</h2>
+          </div>
+          <p>Resume content placeholder.</p>
+        </section>
+
+        <section id="contact" className="section">
+          <div className="section-heading">
+            <p className="eyebrow">Contact</p>
+            <h2>Contact</h2>
+          </div>
+          <p>Contact details placeholder.</p>
+        </section>
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
