@@ -8,6 +8,19 @@ const navItems = [
   { label: "Contact", href: "#contact" },
 ];
 
+const links = {
+  linkedin: "https://www.linkedin.com/in/christianmarroyo/",
+  email: "mailto:arroyo.main@gmail.com",
+  github: "https://github.com/arroyoHub",
+  resume: "/christian-arroyo-resume.pdf",
+  projects: {
+    economicOpportunityDashboard: "#economic-opportunity-dashboard-placeholder",
+    dataProcessingPlatform: "#data-processing-platform-placeholder",
+    skipTraceAnalytics: "#skip-trace-analytics-placeholder",
+    marchMadnessPredictor: "#march-madness-predictor-placeholder",
+  },
+};
+
 function App() {
   return (
     <div id="top" className="page-shell">
@@ -68,9 +81,13 @@ function App() {
                   <span>Data Storytelling</span>
                 </div>
               </div>
-              <div className="project-arrow" aria-hidden="true">
+              <a
+                className="project-arrow"
+                href={links.projects.economicOpportunityDashboard}
+                aria-label="View Economic Opportunity Dashboard project"
+              >
                 →
-              </div>
+              </a>
             </article>
 
             <article className="project-row">
@@ -89,29 +106,37 @@ function App() {
                   <span>Git</span>
                 </div>
               </div>
-              <div className="project-arrow" aria-hidden="true">
+              <a
+                className="project-arrow"
+                href={links.projects.dataProcessingPlatform}
+                aria-label="View Configurable Data Processing Platform project"
+              >
                 →
-              </div>
+              </a>
             </article>
 
             <article className="project-row">
               <div className="project-number">03</div>
               <div className="project-content">
-                <h3>Skip Trace Analytics</h3>
+                <h3>Dashboard User Access Database</h3>
                 <p>
-                  A relational tracking and reporting framework designed to
-                  analyze vendor results, duplicate activity, hit rates, and
-                  operational costs.
+                  A SQL Server and Python workflow for managing dashboard users,
+                  access requests, client permissions, email logging, and access
+                  completion.
                 </p>
                 <div className="tag-list" aria-label="Project tags">
                   <span>SQL Server</span>
-                  <span>Reporting</span>
-                  <span>Analytics</span>
+                  <span>Python</span>
+                  <span>Workflow Automation</span>
                 </div>
               </div>
-              <div className="project-arrow" aria-hidden="true">
+              <a
+                className="project-arrow"
+                href={links.projects.skipTraceAnalytics}
+                aria-label="View Dashboard User Access Database project"
+              >
                 →
-              </div>
+              </a>
             </article>
 
             <article className="project-row">
@@ -119,8 +144,8 @@ function App() {
               <div className="project-content">
                 <h3>March Madness Predictor</h3>
                 <p>
-                  Exploring historical NCAA tournament data and predictive
-                  modeling techniques using Python.
+                  Exploring historical NCAA tournament data using Python to
+                  prepare features and evaluate predictive modeling approaches.
                 </p>
                 <div className="tag-list" aria-label="Project tags">
                   <span>Python</span>
@@ -128,19 +153,24 @@ function App() {
                   <span>Data Analysis</span>
                 </div>
               </div>
-              <div className="project-arrow" aria-hidden="true">
+              <a
+                className="project-arrow"
+                href={links.projects.marchMadnessPredictor}
+                aria-label="View March Madness Predictor project"
+              >
                 →
-              </div>
+              </a>
             </article>
           </div>
         </section>
 
         <section id="about" className="section">
           <div className="about-layout">
-            <div
+            <img
               className="about-photo"
-              aria-label="Profile photo placeholder"
-            ></div>
+              src="/images/christian-arroyo-profile.jpeg"
+              alt="Christian Arroyo"
+            />
 
             <div className="about-copy">
               <div className="section-heading">
@@ -241,14 +271,14 @@ function App() {
             </p>
 
             <div className="resume-actions">
-              <a href="/resume.pdf" className="resume-primary" download>
+              <a href={links.resume} className="resume-primary" download>
                 Download Resume
               </a>
               <a
-                href="https://www.linkedin.com"
+                href={links.linkedin}
                 className="resume-secondary"
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 View LinkedIn
               </a>
@@ -264,8 +294,8 @@ function App() {
               Open to opportunities in data analysis, reporting, business
               intelligence, and operations analytics.
             </p>
-            <a className="contact-email" href="mailto:hello@example.com">
-              hello@example.com
+            <a className="contact-email" href={links.email}>
+              arroyo.main@gmail.com
             </a>
           </div>
 
@@ -279,16 +309,16 @@ function App() {
 
             <nav className="footer-links" aria-label="Footer navigation">
               <a
-                href="https://www.linkedin.com"
+                href={links.linkedin}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
               >
                 LinkedIn
               </a>
-              <a href="https://github.com" target="_blank" rel="noreferrer">
+              <a href={links.github} target="_blank" rel="noopener noreferrer">
                 GitHub
               </a>
-              <a href="mailto:hello@example.com">Email</a>
+              <a href={links.email}>Email</a>
             </nav>
           </footer>
         </section>

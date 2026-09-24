@@ -333,6 +333,7 @@ main {
   font-size: 1.5rem;
   line-height: 1;
   color: var(--text-muted);
+  text-decoration: none;
 }
 
 .skills-layout {
@@ -384,9 +385,13 @@ main {
 }
 
 .about-photo {
+  display: block;
+  width: 100%;
+  height: 420px;
   min-height: 420px;
   border: 1px solid var(--border-soft);
-  background: var(--panel-strong);
+  object-fit: cover;
+  object-position: center 35%;
 }
 
 .about-copy {
@@ -442,7 +447,7 @@ main {
 }
 
 #skills {
-  background: #fbfaf7;
+  background: var(--paper-light);
 }
 
 #resume {
@@ -528,7 +533,7 @@ main {
   gap: var(--space-7);
   padding: 3rem var(--space-5) var(--space-4);
   border-top: 0;
-  background: #211e1b;
+  background: var(--navy);
   color: var(--paper);
 }
 
@@ -713,6 +718,7 @@ main {
   }
 
   .about-photo {
+    height: 260px;
     min-height: 260px;
   }
 
